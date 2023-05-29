@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from utils import make_soup
 
 
-def getl_languages(langs_get_url: str):
+def get_languages(langs_get_url: str):
     soup = make_soup(langs_get_url)
     if not isinstance(soup, BeautifulSoup):
         print("Something went wrong, retry later. Error code: ", soup)
